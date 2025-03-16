@@ -14,10 +14,11 @@ The implementation is based on the concept of the DWA planner, but it is still u
 - Uses **RViz Markers** to visualize sampled trajectories.
 - Works in **Gazebo** with obstacles for real-world testing.
 
-<h2 align="center">Demo Video</h2>  
+## Demo Video  
+
 <p align="center">
-  <a href="https://youtu.be/e1Kj1UC1THs">
-    <img src="https://img.youtube.com/vi/e1Kj1UC1THs/0.jpg" alt="Watch the video" width="600"/>
+  <a href="https://youtu.be/yFtexC6-Z1g">
+    <img src="https://img.youtube.com/vi/yFtexC6-Z1g/0.jpg" alt="Watch the video" width="600"/>
   </a>
 </p>
 
