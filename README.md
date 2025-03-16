@@ -14,6 +14,9 @@ The implementation is based on the concept of the DWA planner, but it is still u
 - Uses **RViz Markers** to visualize sampled trajectories.
 - Works in **Gazebo** with obstacles for real-world testing.
 
+## Demo Video  
+[![Watch the video](https://img.youtube.com/vi/e1Kj1UC1THs/0.jpg)](https://youtu.be/e1Kj1UC1THs)  
+
 ## Installation & Setup
 ### 1. Install ROS2 Humble and TurtleBot3 Simulation
 Ensure you have **ROS2 Humble** installed:
