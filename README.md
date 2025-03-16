@@ -79,6 +79,8 @@ ros2 run custom_dwa_planner dwa_planner
     ```
   - In **RViz**, click **Add → By Topic** and select **visual_paths** to view the planned trajectories.
 
+
+## Picture of Working 
 ![Custom DWA Planner](images/dwa_diagram.png)
 
 ## Known Issues & Future Improvements
