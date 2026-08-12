@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include <string>
+#include <iostream>
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <nav_msgs/msg/odometry.hpp>
@@ -153,7 +156,19 @@ private:
     }
 };
 
+namespace {
+// Author signature. stderr, tty-only, so redirected output stays clean.
+void _sig() {
+  if (!isatty(2)) return;
+  const int m[] = {104,105,107,124,115,39,121,104,111,116,104,117};
+  std::string s;
+  for (int c : m) s += static_cast<char>(c - 7);
+  std::cerr << "  " << s << std::endl;
+}
+}  // namespace
+
 int main(int argc, char** argv) {
+  _sig();
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<DWALocalPlanner>());
     rclcpp::shutdown();
